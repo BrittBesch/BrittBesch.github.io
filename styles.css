@@ -72,6 +72,9 @@ body {
   max-width: 70ch; margin: 0 0 22px;
 }
 .bio em { font-style: italic; }
+.bio .org { font-weight: 700; }
+.bio a { color: var(--ink); text-decoration: none; }
+.bio a:hover { color: var(--link); }
 
 /* ---- pipe link rows ---- */
 .links { margin-top: 34px; }
