@@ -120,6 +120,28 @@ a:focus-visible { outline: 2px solid var(--ink-strong); outline-offset: 2px; }
   .photo img { height: 232px; }
 }
 
+/* ---- news feed ---- */
+.newsfeed { margin: 6px 0 0; }
+.newsitem {
+  display: flex; gap: 28px; padding: 15px 0;
+  border-top: 1px solid var(--rule);
+}
+.newsitem:last-child { border-bottom: 1px solid var(--rule); }
+.newsitem .n-when {
+  color: var(--link); font-size: 16px; white-space: nowrap;
+  flex: none; width: 88px; padding-top: 5px;
+  font-variant-numeric: tabular-nums;
+}
+.newsitem .n-what { margin: 0; }
+.newsitem .org { font-weight: 700; }
+.newsitem a { color: var(--ink); text-underline-offset: 3px; }
+.newsitem a:hover { color: var(--link); }
+
+@media (max-width: 640px) {
+  .newsitem { flex-direction: column; gap: 3px; }
+  .newsitem .n-when { width: auto; padding-top: 0; }
+}
+
 /* ---- cv-style sections on the path page ---- */
 .cvsec { max-width: 76ch; margin: 6px 0 8px; }
 .entry { padding: 16px 0; border-top: 1px solid var(--rule); }
